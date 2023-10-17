@@ -8,6 +8,7 @@ import AboutMe from "./Components/AboutMe";
 import { rootTypes, store } from "./Context/Store";
 import { ThemeProvider } from "styled-components";
 import { darkTheme, lightTheme } from "./Theme/theme";
+import Skills from "./Components/Skills";
 
 function App() {
   const { changeTheme } = useContext(store) as rootTypes;
@@ -20,6 +21,7 @@ function App() {
           <Navbar />
           <Introduction />
           <AboutMe />
+          <Skills />
         </Container>
       </React.Fragment>
     </ThemeProvider>
