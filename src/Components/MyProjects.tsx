@@ -19,6 +19,7 @@ import {
   WeatherAppSandboxDown,
   WeatherAppTextDiv,
 } from "../Styled-Components/StyledProjects";
+import ScShotModal from "./ScreenShotModal";
 
 export default function MyProjects() {
   return (
@@ -68,7 +69,9 @@ export default function MyProjects() {
               </WeatherAppSandboxDown>
             </WeatherAppSandBox>
           </WeatherAppDivLinks>
-          <ScreenShotDiv>{/* <ScShotModal /> */}</ScreenShotDiv>
+          <ScreenShotDiv>
+            <ScShotModal />
+          </ScreenShotDiv>
         </WeatherAppContainer>
       </DownContainer>
     </ProjectsContainer>
