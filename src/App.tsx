@@ -9,6 +9,7 @@ import { rootTypes, store } from "./Context/Store";
 import { ThemeProvider } from "styled-components";
 import { darkTheme, lightTheme } from "./Theme/theme";
 import Skills from "./Components/Skills";
+import EmptyDiv from "./Components/EmptyDiv";
 
 function App() {
   const { changeTheme } = useContext(store) as rootTypes;
@@ -22,6 +23,7 @@ function App() {
           <Introduction />
           <AboutMe />
           <Skills />
+          <EmptyDiv />
         </Container>
       </React.Fragment>
     </ThemeProvider>
