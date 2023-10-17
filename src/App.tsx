@@ -11,6 +11,7 @@ import { darkTheme, lightTheme } from "./Theme/theme";
 import Skills from "./Components/Skills";
 import EmptyDiv from "./Components/EmptyDiv";
 import MyProjects from "./Components/MyProjects";
+import ContactForm from "./Components/ContactForm";
 
 function App() {
   const { changeTheme } = useContext(store) as rootTypes;
@@ -27,6 +28,7 @@ function App() {
           <EmptyDiv />
           <MyProjects />
           <EmptyDiv />
+          <ContactForm />
         </Container>
       </React.Fragment>
     </ThemeProvider>
