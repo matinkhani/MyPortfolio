@@ -26,6 +26,7 @@ function App() {
           <Skills />
           <EmptyDiv />
           <MyProjects />
+          <EmptyDiv />
         </Container>
       </React.Fragment>
     </ThemeProvider>
