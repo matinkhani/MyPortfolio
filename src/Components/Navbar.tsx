@@ -1,5 +1,6 @@
 import React from "react";
 import { NavTabs, ScrollTabs, StyledNavbar } from "../Styled-Components/StyledNavbar";
+import ContactModal from "./ContactModal";
 
 export default function Navbar() {
   const tabletMode = window.innerWidth;
@@ -49,7 +50,7 @@ export default function Navbar() {
   return (
     <React.Fragment>
       <StyledNavbar>
-        {/* <ContactModal /> */}
+        <ContactModal />
         <ScrollTabs>
           <NavTabs onClick={scrollToHome}>Home</NavTabs>
           <NavTabs onClick={scrollToAbout}>About</NavTabs>
