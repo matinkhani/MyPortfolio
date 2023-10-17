@@ -1,4 +1,12 @@
-import { MySkills, ProfessionalText, StyledSkillsContainer, StyledSkillsDIV, StyledSkillsH1, StyledSkillsTEXT } from "../Styled-Components/StyledSkills";
+import {
+  MySkills,
+  ProfessionalText,
+  StyledSkillsContainer,
+  StyledSkillsDIV,
+  StyledSkillsH1,
+  StyledSkillsTEXT,
+} from "../Styled-Components/StyledSkills";
+import MapSkills from "./MapSkills";
 
 export default function Skills() {
   return (
@@ -10,7 +18,7 @@ export default function Skills() {
       </StyledSkillsTEXT>
       <StyledSkillsDIV>
         <MySkills>
-          {/* <MapSkills /> */}
+          <MapSkills />
         </MySkills>
       </StyledSkillsDIV>
     </StyledSkillsContainer>
