@@ -1,6 +1,7 @@
 import { FaReact } from "react-icons/fa";
 import { SiNextdotjs } from "react-icons/si";
 import { IntroductionFrontend, IntroductionH1, IntroductionName, IntroductionPlace, IntroductionText, NextIcon, ReactIcon, StyledIntroduction, WavyHand } from "../Styled-Components/StyledIntroduction";
+import Type from "./Type";
 
 export default function Introduction() {
   return (
@@ -20,7 +21,7 @@ export default function Introduction() {
           <IntroductionName>Matin Khani</IntroductionName>
         </div>
         <IntroductionFrontend>
-          {/* <Type /> */}
+          <Type />
         </IntroductionFrontend>
       </IntroductionPlace>
       <NextIcon>
