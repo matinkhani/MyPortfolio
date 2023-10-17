@@ -1,6 +1,7 @@
 import React from "react";
 import { NavTabs, ScrollTabs, StyledNavbar } from "../Styled-Components/StyledNavbar";
 import ContactModal from "./ContactModal";
+import ChangeTheme from "../Theme/changeThems";
 
 export default function Navbar() {
   const tabletMode = window.innerWidth;
@@ -61,7 +62,7 @@ export default function Navbar() {
           <div></div>
           <div></div>
         </ScrollTabs>
-        {/* <ChangeTheme /> */}
+        <ChangeTheme />
       </StyledNavbar>
     </React.Fragment>
   );
