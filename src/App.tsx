@@ -13,6 +13,7 @@ import EmptyDiv from "./Components/EmptyDiv";
 import MyProjects from "./Components/MyProjects";
 import ContactForm from "./Components/ContactForm";
 import FindMeOn from "./Components/FindMeOn";
+import Footer from "./Components/Footer";
 
 function App() {
   const { changeTheme } = useContext(store) as rootTypes;
@@ -31,6 +32,7 @@ function App() {
           <EmptyDiv />
           <ContactForm />
           <FindMeOn />
+          <Footer />
         </Container>
       </React.Fragment>
     </ThemeProvider>
