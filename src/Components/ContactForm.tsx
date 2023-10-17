@@ -2,6 +2,7 @@ import React, { useRef, useState, useContext } from "react";
 import emailjs from "@emailjs/browser";
 import { rootTypes, store } from "../Context/Store";
 import { AlertContainer, FormBtn, FormBtnContainer, FormContainer, FormInputContainer, FormLargeText, FormSmallText, InputNameAndEmail, MessageArea } from "../Styled-Components/StyledForm";
+import AlertFunc from "./Alert";
 
 export default function ContactForm() {
   const [name, setName] = useState<string>("");
@@ -44,7 +45,7 @@ export default function ContactForm() {
   return (
     <FormContainer ref={form} onSubmit={sendEmail}>
       <AlertContainer>
-        {/* <AlertFunc /> */}
+        <AlertFunc />
       </AlertContainer>
       <FormLargeText>Contact Form</FormLargeText>
       <FormSmallText>
