@@ -3,6 +3,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import { Container, GlobalStyles } from "./Styled-Components/StyledContainer";
 import Navbar from "./Components/Navbar";
+import Introduction from "./Components/Introduction";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <GlobalStyles />
       <Container>
         <Navbar />
+        <Introduction />
       </Container>
     </React.Fragment>
   );
