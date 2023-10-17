@@ -4,6 +4,7 @@ import "./App.css";
 import { Container, GlobalStyles } from "./Styled-Components/StyledContainer";
 import Navbar from "./Components/Navbar";
 import Introduction from "./Components/Introduction";
+import AboutMe from "./Components/AboutMe";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Container>
         <Navbar />
         <Introduction />
+        <AboutMe />
       </Container>
     </React.Fragment>
   );
