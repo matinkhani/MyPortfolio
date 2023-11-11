@@ -43,7 +43,6 @@ export const WeatherAppTextDiv = styled.div`
   justify-content: center;
   align-items: center;
   color: ${({ theme }) => theme.cardColor};
-  background-color: red;
   background-image: url("../Images/Screenshot2.png");
   background-size: cover;
   border-top-right-radius: 20px;
@@ -57,7 +56,6 @@ export const WeatherAppTextDiv2 = styled.div`
   justify-content: center;
   align-items: center;
   color: ${({ theme }) => theme.cardColor};
-  background-color: red;
   background-image: url("../Images/bebinimSC.jpeg");
   background-size: cover;
   border-top-right-radius: 20px;
