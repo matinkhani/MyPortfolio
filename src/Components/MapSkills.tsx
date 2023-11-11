@@ -13,121 +13,115 @@ import { IoLogoPwa } from "react-icons/io5";
 import { BsGit } from "react-icons/bs";
 import { SiAxios } from "react-icons/si";
 import { FaSass } from "react-icons/fa";
-import Tooltip from "@mui/material/Tooltip";
-import { styled } from "@mui/material/styles";
-import { TooltipProps, tooltipClasses } from "@mui/material/Tooltip";
-import Zoom from "@mui/material/Zoom";
-import { SkillDIV1, SkillDIV2, SkillDIV3, Skills1 } from "../Styled-Components/StyledSkills";
-
-const IconsTooltip = styled(({ className, ...props }: TooltipProps) => (
-  <Tooltip {...props} arrow classes={{ popper: className }} />
-))(({ theme }) => ({
-  [`& .${tooltipClasses.arrow}`]: {
-    color: theme.palette.common.black,
-  },
-  [`& .${tooltipClasses.tooltip}`]: {
-    backgroundColor: theme.palette.common.black,
-  },
-}));
+import { FaBootstrap } from "react-icons/fa";
+import {
+  CardSkills,
+  SikllsDiv,
+  Skills1,
+  TextSkills,
+} from "../Styled-Components/StyledSkills";
 
 export default function MapSkills() {
   return (
     <>
-      <SkillDIV1>
-        <IconsTooltip TransitionComponent={Zoom} title="HTML">
+      <SikllsDiv>
+        <CardSkills>
           <Skills1>
             <AiFillHtml5 />
           </Skills1>
-        </IconsTooltip>
-
-        <IconsTooltip TransitionComponent={Zoom} title="CSS">
+          <TextSkills>HTML</TextSkills>
+        </CardSkills>
+        <CardSkills>
           <Skills1>
             <FaCss3 />
           </Skills1>
-        </IconsTooltip>
-
-        <IconsTooltip TransitionComponent={Zoom} title="JavaScript">
+          <TextSkills>CSS</TextSkills>
+        </CardSkills>
+        <CardSkills>
           <Skills1>
             <SiJavascript />
           </Skills1>
-        </IconsTooltip>
-
-        <IconsTooltip TransitionComponent={Zoom} title="React JS">
+          <TextSkills>JavaScript</TextSkills>
+        </CardSkills>
+        <CardSkills>
           <Skills1>
             <FaReact />
           </Skills1>
-        </IconsTooltip>
-
-        <IconsTooltip TransitionComponent={Zoom} title="TypeScript">
+          <TextSkills>React Js</TextSkills>
+        </CardSkills>
+        <CardSkills>
+          <Skills1>
+            <FaBootstrap />
+          </Skills1>
+          <TextSkills>Bootstrap</TextSkills>
+        </CardSkills>
+        <CardSkills>
           <Skills1>
             <SiTypescript />
           </Skills1>
-        </IconsTooltip>
-      </SkillDIV1>
-
-      <SkillDIV2>
-        <IconsTooltip TransitionComponent={Zoom} title="Redux">
+          <TextSkills>TypeScript</TextSkills>
+        </CardSkills>
+        <CardSkills>
           <Skills1>
             <SiRedux />
           </Skills1>
-        </IconsTooltip>
-
-        <IconsTooltip TransitionComponent={Zoom} title="Next JS">
+          <TextSkills>Redux - Redux Toolkit</TextSkills>
+        </CardSkills>
+        <CardSkills>
           <Skills1>
             <SiNextdotjs />
           </Skills1>
-        </IconsTooltip>
-
-        <IconsTooltip TransitionComponent={Zoom} title="Git">
+          <TextSkills>Next Js</TextSkills>
+        </CardSkills>
+        <CardSkills>
           <Skills1>
             <BsGit />
           </Skills1>
-        </IconsTooltip>
-
-        <IconsTooltip TransitionComponent={Zoom} title="Axios">
+          <TextSkills>Git - GitHub</TextSkills>
+        </CardSkills>
+        <CardSkills>
           <Skills1>
             <SiAxios />
           </Skills1>
-        </IconsTooltip>
-
-        <IconsTooltip TransitionComponent={Zoom} title="PWA">
+          <TextSkills>Axios</TextSkills>
+        </CardSkills>
+        <CardSkills>
           <Skills1>
             <IoLogoPwa />
           </Skills1>
-        </IconsTooltip>
-      </SkillDIV2>
-
-      <SkillDIV3>
-        <IconsTooltip TransitionComponent={Zoom} title="Material UI">
+          <TextSkills>Progressive Web App</TextSkills>
+        </CardSkills>
+        <CardSkills>
           <Skills1>
             <SiMui />
           </Skills1>
-        </IconsTooltip>
-
-        <IconsTooltip TransitionComponent={Zoom} title="Styled Components">
+          <TextSkills>Materia UI</TextSkills>
+        </CardSkills>
+        <CardSkills>
           <Skills1>
             <SiStyledcomponents />
           </Skills1>
-        </IconsTooltip>
-
-        <IconsTooltip TransitionComponent={Zoom} title="Tailwind CSS">
+          <TextSkills>Styled Components</TextSkills>
+        </CardSkills>
+        <CardSkills>
           <Skills1>
             <SiTailwindcss />
           </Skills1>
-        </IconsTooltip>
-
-        <IconsTooltip TransitionComponent={Zoom} title="JSS">
+          <TextSkills>Tailwind css</TextSkills>
+        </CardSkills>
+        <CardSkills>
           <Skills1>
             <SiJss />
           </Skills1>
-        </IconsTooltip>
-
-        <IconsTooltip TransitionComponent={Zoom} title="Scss - Sass">
+          <TextSkills>Jss</TextSkills>
+        </CardSkills>
+        <CardSkills>
           <Skills1>
             <FaSass />
           </Skills1>
-        </IconsTooltip>
-      </SkillDIV3>
+          <TextSkills>Sass</TextSkills>
+        </CardSkills>
+      </SikllsDiv>
     </>
   );
 }

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledSkillsContainer = styled.div`
   width: 100%;
-  height: 800px;
+  height: 850px;
   display: flex;
   flex-direction: column;
   background-color: ${({ theme }) => theme.container};
@@ -11,17 +11,21 @@ export const StyledSkillsContainer = styled.div`
     height: 400px;
   }
 
-  @media screen and (min-width: 320px) and (max-width: 480px) {
-    height: 400px;
+  @media screen and (min-width: 320px) and (max-width: 1000px) {
+    height: fit-content;
   }
 `;
 
 export const StyledSkillsTEXT = styled.div`
-  height: 60%;
+  height: 40%;
   display: flex;
   align-items: end;
   justify-content: center;
   margin-bottom: 50px;
+  
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    margin-top: 80px;
+  }
 `;
 
 export const StyledSkillsH1 = styled.div`
@@ -71,37 +75,50 @@ export const MySkills = styled.div`
   }
 `;
 
-export const SkillDIV1 = styled.div`
-  height: 33.3%;
+export const SikllsDiv = styled.div`
+  height: 100%;
   width: 100%;
-  display: flex;
   align-items: center;
   justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(4, 180px);
 
   @media screen and (min-width: 320px) and (max-width: 480px) {
-    margin-bottom: 35px;
-    margin-top: 50px;
+    grid-template-columns: repeat(1, 180px);
+  }
+  @media screen and (min-width: 480px) and (max-width: 700px) {
+    grid-template-columns: repeat(2, 180px);
+  }
+  @media screen and (min-width: 700px) and (max-width: 1000px) {
+    grid-template-columns: repeat(3, 200px);
+  }
+  @media screen and (min-width: 1000px) and (max-width: 1200px) {
+    grid-template-columns: repeat(3, 200px);
   }
 `;
 
-export const SkillDIV2 = styled.div`
-  height: 33.3%;
-  width: 100%;
+export const CardSkills = styled.div`
+  width: 190px;
+  height: 130px;
+  background-color: #29263a;
+  border-radius: 12px;
   display: flex;
+  justify-content: space-evenly;
   align-items: center;
-  justify-content: space-around;
+  flex-direction: column;
 
-  @media screen and (min-width: 320px) and (max-width: 480px) {
-    margin-bottom: 35px;
+  @media screen and (min-width: 320px) and (max-width: 1200px) {
+    margin-bottom: 20px;
   }
 `;
 
-export const SkillDIV3 = styled.div`
-  height: 33.3%;
+export const TextSkills = styled.div`
   width: 100%;
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-around;
+  font-size: 16px;
+  color: ${({ theme }) => theme.fontColor};
 `;
 
 export const ProfessionalText = styled.div`
@@ -112,9 +129,9 @@ export const ProfessionalText = styled.div`
 
 export const Skills1 = styled.div`
   color: ${({ theme }) => theme.iconColor};
-  height: 120px;
-  width: 120px;
-  font-size: 120px;
+  height: 60px;
+  width: 60px;
+  font-size: 60px;
   transition: all 0.2s;
   cursor: pointer;
 
@@ -122,7 +139,7 @@ export const Skills1 = styled.div`
     color: ${({ theme }) => theme.hoverIcon};
   }
 
-  @media screen and (min-width: 0px) and (max-width: 320px) {
+  /* @media screen and (min-width: 0px) and (max-width: 320px) {
     height: 30px;
     width: 30px;
     font-size: 30px;
@@ -156,5 +173,5 @@ export const Skills1 = styled.div`
     height: 80px;
     width: 80px;
     font-size: 80px;
-  }
+  } */
 `;

@@ -2,17 +2,21 @@ import styled from "styled-components";
 
 export const ProjectsContainer = styled.div`
   width: 100%;
-  height: 500px;
+  height: 800px;
   display: flex;
   flex-direction: column;
   background-color: ${({ theme }) => theme.container};
 `;
 
 export const TopContainer = styled.div`
-  height: 35%;
+  height: 10%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
+
+  @media screen and (min-width: 320px) and (max-width: 1040px) {
+    align-items: center;
+  }
 `;
 
 export const TextProjects = styled.h1`
@@ -20,102 +24,124 @@ export const TextProjects = styled.h1`
 `;
 
 export const DownContainer = styled.div`
-  height: 65%;
+  height: 90%;
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 100px;
+  width: 100%;
+
+  @media screen and (max-width: 1040px) {
+    flex-direction: column;
+    gap: 50px;
+  }
 `;
 
 export const WeatherAppTextDiv = styled.div`
-  height: 40%;
+  height: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   color: ${({ theme }) => theme.cardColor};
+  background-color: red;
+  background-image: url("../Images/Screenshot2.png");
+  background-size: cover;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  background-position: 50% 50%;
+`;
+
+export const WeatherAppTextDiv2 = styled.div`
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: ${({ theme }) => theme.cardColor};
+  background-color: red;
+  background-image: url("../Images/bebinimSC.jpeg");
+  background-size: cover;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  background-position: 50% 0%;
 `;
 
 export const WeatherAppDivLinks = styled.div`
   height: 60%;
   display: flex;
-`;
-
-export const WeatherAppGitHub = styled.div`
-  height: 100%;
-  width: 50%;
-  display: flex;
   flex-direction: column;
+  align-items: end;
 `;
 
-export const WeatherAppGitHubUp = styled.div`
-  width: 100%;
-  height: 40%;
+export const Title = styled.div`
+  height: 20%;
+  width: 95%;
   display: flex;
-  justify-content: center;
   align-items: center;
-  color: ${({ theme }) => theme.cardColor};
+  color: #fff;
+  font-size: 20px;
 
   @media screen and (min-width: 320px) and (max-width: 480px) {
-    font-size: 12px;
+    font-size: 16px;
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 1040px) {
+    font-size: 18px;
   }
 `;
 
-export const WeatherAppGitHubDown = styled.div`
-  width: 100%;
-  height: 60%;
+export const Explain = styled.div`
+  height: 45%;
+  width: 95%;
   display: flex;
-  justify-content: center;
   align-items: center;
-`;
-
-export const WeatherAppSandBox = styled.div`
-  height: 100%;
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-`;
-
-export const WeatherAppSandBoxUp = styled.div`
-  width: 100%;
-  height: 40%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: ${({ theme }) => theme.cardColor};
+  color: #fff;
+  font-size: 16px;
+  line-height: 25px;
 
   @media screen and (min-width: 320px) and (max-width: 480px) {
     font-size: 12px;
+    line-height: 18px;
+  }
+  @media screen and (min-width: 480px) and (max-width: 1040px) {
+    font-size: 14px;
+    line-height: 20px;
   }
 `;
 
-export const WeatherAppSandboxDown = styled.div`
+export const LinksPlace = styled.div`
+  height: 35%;
   width: 100%;
-  height: 60%;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: space-around;
 `;
 
-export const DivGitHub = styled.div`
-  color: ${({ theme }) => theme.cardColor};
-`;
-
-export const DivSandBox = styled.div`
-  color: ${({ theme }) => theme.cardColor};
-`;
-
-export const ScreenShotDiv = styled.div`
-  width: 100%;
-  height: 70px;
+export const LinkDiv = styled.div`
   display: flex;
-  justify-content: center;
   align-items: center;
-  color: ${({ theme }) => theme.cardColor};
+  height: 80%;
+  width: fit-content;
+  padding-inline: 10px;
+  background-color: #181727;
+  border-radius: 8px;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    width: 35%;
+    font-size: 12px;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 1040px) {
+    width: 35%;
+    font-size: 14px;
+    justify-content: center;
+  }
 `;
 
 export const WeatherAppContainer = styled.div`
-  width: 25%;
-  height: 80%;
-  background-color: ${({ theme }) => theme.iconColor};
+  width: 450px;
+  height: 480px;
+  background-color: #29263a;
   color: ${({ theme }) => theme.cardColor};
   border-radius: 20px;
   display: flex;
@@ -123,18 +149,6 @@ export const WeatherAppContainer = styled.div`
   transition: all 0.5s;
 
   @media screen and (min-width: 0px) and (max-width: 480px) {
-    width: 90%;
-  }
-
-  @media screen and (min-width: 480px) and (max-width: 600px) {
-    width: 80%;
-  }
-
-  @media screen and (min-width: 600px) and (max-width: 768px) {
-    width: 70%;
-  }
-
-  @media screen and (min-width: 768px) and (max-width: 900px) {
-    width: 60%;
+    width: 280px;
   }
 `;

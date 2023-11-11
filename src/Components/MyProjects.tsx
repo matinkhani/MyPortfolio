@@ -1,25 +1,20 @@
 import { AiFillGithub } from "react-icons/ai";
 import { AiFillCodeSandboxCircle } from "react-icons/ai";
-import { TiWeatherCloudy } from "react-icons/ti";
+import { IoLogoVercel } from "react-icons/io5";
 import {
-  DivGitHub,
-  DivSandBox,
   DownContainer,
+  Explain,
+  LinkDiv,
+  LinksPlace,
   ProjectsContainer,
-  ScreenShotDiv,
   TextProjects,
+  Title,
   TopContainer,
   WeatherAppContainer,
   WeatherAppDivLinks,
-  WeatherAppGitHub,
-  WeatherAppGitHubDown,
-  WeatherAppGitHubUp,
-  WeatherAppSandBox,
-  WeatherAppSandBoxUp,
-  WeatherAppSandboxDown,
   WeatherAppTextDiv,
+  WeatherAppTextDiv2,
 } from "../Styled-Components/StyledProjects";
-import ScShotModal from "./ScreenShotModal";
 
 export default function MyProjects() {
   return (
@@ -29,49 +24,88 @@ export default function MyProjects() {
       </TopContainer>
       <DownContainer>
         <WeatherAppContainer>
-          <WeatherAppTextDiv>
-            <h2>Weather App</h2>
-            <TiWeatherCloudy style={{ height: 30, width: 30, marginLeft: 5 }} />
-          </WeatherAppTextDiv>
+          <WeatherAppTextDiv />
           <WeatherAppDivLinks>
-            <WeatherAppGitHub>
-              <WeatherAppGitHubUp>
-                <h3>Open in GitHub</h3>
-              </WeatherAppGitHubUp>
-              <WeatherAppGitHubDown>
+            <Title>Weather App</Title>
+            <Explain>
+              This is my first project that worked with API and <br /> it shows
+              the weather well and the background <br /> changes depending on
+              weather the city is day <br /> or night.
+            </Explain>
+            <LinksPlace>
+              <LinkDiv>
                 <a
-                  style={{ textDecoration: "none", color: "white" }}
+                  style={{
+                    textDecoration: "none",
+                    color: "white",
+                    textAlign: "center",
+                  }}
                   target="_blank"
                   href="https://github.com/matinkhani/Weather-App"
                 >
-                  <DivGitHub>
-                    <AiFillGithub style={{ height: 50, width: 50 }} />
-                  </DivGitHub>
+                  <AiFillGithub style={{ height: 25, width: 25 }} />
+                  <div>Open in GitHub</div>
                 </a>
-              </WeatherAppGitHubDown>
-            </WeatherAppGitHub>
-            <WeatherAppSandBox>
-              <WeatherAppSandBoxUp>
-                <h3>Open in SandBox</h3>
-              </WeatherAppSandBoxUp>
-              <WeatherAppSandboxDown>
+              </LinkDiv>
+              <LinkDiv>
                 <a
-                  style={{ textDecoration: "none", color: "white" }}
+                  style={{
+                    textDecoration: "none",
+                    color: "white",
+                    textAlign: "center",
+                  }}
                   target="_blank"
                   href="https://codesandbox.io/p/github/matinkhani/Weather-App/main?file=/src/Weather-App/weatherApp.tsx:1,1&workspaceId=096b045d-559d-4b18-8483-bd1c41d354a6"
                 >
-                  <DivSandBox>
-                    <AiFillCodeSandboxCircle
-                      style={{ height: 50, width: 50 }}
-                    />
-                  </DivSandBox>
+                  <AiFillCodeSandboxCircle style={{ height: 25, width: 25 }} />
+                  <div>Open in SandBox</div>
                 </a>
-              </WeatherAppSandboxDown>
-            </WeatherAppSandBox>
+              </LinkDiv>
+            </LinksPlace>
           </WeatherAppDivLinks>
-          <ScreenShotDiv>
-            <ScShotModal />
-          </ScreenShotDiv>
+        </WeatherAppContainer>
+
+        <WeatherAppContainer>
+          <WeatherAppTextDiv2></WeatherAppTextDiv2>
+          <WeatherAppDivLinks>
+            <Title>Bebinim</Title>
+            <Explain>
+              This is my biggest project, which is an iranian and <br /> foreign
+              film and series site. state management of <br />
+              this site is done with Redux Toolkit and Redux Persist.
+            </Explain>
+            <LinksPlace>
+              <LinkDiv>
+                <a
+                  style={{
+                    textDecoration: "none",
+                    color: "white",
+                    textAlign: "center",
+                  }}
+                  target="_blank"
+                  href="https://github.com/matinkhani/Bebinim"
+                >
+                  <AiFillGithub style={{ height: 25, width: 25 }} />
+                  <div>Open in GitHub</div>
+                </a>
+              </LinkDiv>
+
+              <LinkDiv>
+                <a
+                  style={{
+                    textDecoration: "none",
+                    color: "white",
+                    textAlign: "center",
+                  }}
+                  target="_blank"
+                  href="https://bebinim.vercel.app"
+                >
+                  <IoLogoVercel style={{ height: 25, width: 25 }} />
+                  <div>Open in Vercel</div>
+                </a>
+              </LinkDiv>
+            </LinksPlace>
+          </WeatherAppDivLinks>
         </WeatherAppContainer>
       </DownContainer>
     </ProjectsContainer>

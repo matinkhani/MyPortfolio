@@ -5,9 +5,8 @@ import { Container, GlobalStyles } from "./Styled-Components/StyledContainer";
 import Navbar from "./Components/Navbar";
 import Introduction from "./Components/Introduction";
 import AboutMe from "./Components/AboutMe";
-import { rootTypes, store } from "./Context/Store";
 import { ThemeProvider } from "styled-components";
-import { darkTheme, lightTheme } from "./Theme/theme";
+import { darkTheme } from "./Theme/theme";
 import Skills from "./Components/Skills";
 import EmptyDiv from "./Components/EmptyDiv";
 import MyProjects from "./Components/MyProjects";
@@ -16,10 +15,8 @@ import FindMeOn from "./Components/FindMeOn";
 import Footer from "./Components/Footer";
 
 function App() {
-  const { changeTheme } = useContext(store) as rootTypes;
-
   return (
-    <ThemeProvider theme={changeTheme ? lightTheme : darkTheme}>
+    <ThemeProvider theme={darkTheme}>
       <React.Fragment>
         <GlobalStyles />
         <Container>

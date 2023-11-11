@@ -63,22 +63,23 @@ export const AboutTextH1 = styled.h1`
   }
 
   @media screen and (min-width: 600px) and (max-width: 768px) {
-    font-size: 42px;
+    font-size: 40px;
   }
 
   @media screen and (min-width: 768px) and (max-width: 900px) {
-    font-size: 49px;
+    font-size: 40px;
   }
 
   @media screen and (min-width: 900px) and (max-width: 1024px) {
-    font-size: 56px;
+    font-size: 45px;
   }
 `;
 
 export const AboutTextH2 = styled.h2`
   color: ${({ theme }) => theme.fontColor};
-  line-height: 32px;
+  line-height: 39px;
   letter-spacing: 2px;
+  text-align: center;
 
   @media screen and (min-width: 0px) and (max-width: 320px) {
     font-size: 16px;
