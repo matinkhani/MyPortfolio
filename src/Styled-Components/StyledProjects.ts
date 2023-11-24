@@ -80,6 +80,7 @@ export const Title = styled.div`
 
   @media screen and (min-width: 320px) and (max-width: 480px) {
     font-size: 16px;
+    height: 15%;
   }
 
   @media screen and (min-width: 480px) and (max-width: 1040px) {
@@ -99,6 +100,7 @@ export const Explain = styled.div`
   @media screen and (min-width: 320px) and (max-width: 480px) {
     font-size: 12px;
     line-height: 18px;
+    height: 50%;
   }
   @media screen and (min-width: 480px) and (max-width: 1040px) {
     font-size: 14px;

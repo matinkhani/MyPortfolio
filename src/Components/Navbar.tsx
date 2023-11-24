@@ -9,33 +9,9 @@ import {
 } from "../Styled-Components/StyledNavbar";
 import ContactModal from "./ContactModal";
 import { HiMenu } from "react-icons/hi";
-
 import { useState } from "react";
 import Modal from "@mui/material/Modal";
-import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import EmailIcon from "@mui/icons-material/Email";
-import Tooltip from "@mui/material/Tooltip";
-import ClickAwayListener from "@mui/material/ClickAwayListener";
-import { styled } from "@mui/material/styles";
-import { TooltipProps, tooltipClasses } from "@mui/material/Tooltip";
-import CloseIcon from "@mui/icons-material/Close";
 import Fade from "@mui/material/Fade";
-import Backdrop from "@mui/material/Backdrop";
-import Avatar from "@mui/material/Avatar";
-import {
-  ContactMePlace,
-  ContactMeText,
-} from "../Styled-Components/StyledNavbar";
-import {
-  MySocialAccounts,
-  SocialAcountsText,
-  StyledModal,
-} from "../Styled-Components/StyledModal";
-import copy from "clipboard-copy";
-import { BiLogoTelegram } from "react-icons/bi";
 
 export default function Navbar() {
   const [open, setOpen] = useState<boolean>(false);
@@ -53,41 +29,146 @@ export default function Navbar() {
   };
 
   const scrollToAbout = () => {
-    if (tabletMode >= 480 && tabletMode <= 600) {
+    if (tabletMode >= 320 && tabletMode <= 600) {
       window.scrollTo({
         top: 758,
         behavior: "smooth",
       });
     } else {
-      window.scrollTo({
-        top: 850,
-        behavior: "smooth",
-      });
+      if (tabletMode >= 600 && tabletMode <= 800) {
+        window.scrollTo({
+          top: 900,
+          behavior: "smooth",
+        });
+      } else {
+        window.scrollTo({
+          top: 850,
+          behavior: "smooth",
+        });
+      }
     }
     setOpen(false);
   };
 
   const scrollToSkills = () => {
-    window.scrollTo({
-      top: 1860,
-      behavior: "smooth",
-    });
+    if (tabletMode >= 320 && tabletMode <= 480) {
+      window.scrollTo({
+        top: 1730,
+        behavior: "smooth",
+      });
+    } else {
+      if (tabletMode >= 480 && tabletMode <= 600) {
+        window.scrollTo({
+          top: 1580,
+          behavior: "smooth",
+        });
+      } else {
+        if (tabletMode >= 600 && tabletMode <= 800) {
+          window.scrollTo({
+            top: 1670,
+            behavior: "smooth",
+          });
+        } else {
+          if (tabletMode >= 800 && tabletMode <= 1200) {
+            window.scrollTo({
+              top: 1700,
+              behavior: "smooth",
+            });
+          } else {
+            window.scrollTo({
+              top: 1860,
+              behavior: "smooth",
+            });
+          }
+        }
+      }
+    }
     setOpen(false);
   };
 
   const scrollToProjects = () => {
-    window.scrollTo({
-      top: 2760,
-      behavior: "smooth",
-    });
+    if (tabletMode >= 320 && tabletMode <= 480) {
+      window.scrollTo({
+        top: 4440,
+        behavior: "smooth",
+      });
+    } else {
+      if (tabletMode >= 480 && tabletMode <= 600) {
+        window.scrollTo({
+          top: 3100,
+          behavior: "smooth",
+        });
+      } else {
+        if (tabletMode >= 600 && tabletMode <= 700) {
+          window.scrollTo({
+            top: 3200,
+            behavior: "smooth",
+          });
+        } else {
+          if (tabletMode >= 700 && tabletMode <= 1000) {
+            window.scrollTo({
+              top: 2900,
+              behavior: "smooth",
+            });
+          } else {
+            if (tabletMode >= 1000 && tabletMode <= 1200) {
+              window.scrollTo({
+                top: 2760,
+                behavior: "smooth",
+              });
+            } else {
+              window.scrollTo({
+                top: 2760,
+                behavior: "smooth",
+              });
+            }
+          }
+        }
+      }
+    }
     setOpen(false);
   };
 
   const scrollToForm = () => {
-    window.scrollTo({
-      top: 3750,
-      behavior: "smooth",
-    });
+    if (tabletMode >= 320 && tabletMode <= 480) {
+      window.scrollTo({
+        top: 5460,
+        behavior: "smooth",
+      });
+    } else {
+      if (tabletMode >= 480 && tabletMode <= 600) {
+        window.scrollTo({
+          top: 4150,
+          behavior: "smooth",
+        });
+      } else {
+        if (tabletMode >= 600 && tabletMode <= 700) {
+          window.scrollTo({
+            top: 4260,
+            behavior: "smooth",
+          });
+        } else {
+          if (tabletMode >= 700 && tabletMode <= 1000) {
+            window.scrollTo({
+              top: 3960,
+              behavior: "smooth",
+            });
+          } else {
+            if (tabletMode >= 1000 && tabletMode <= 1200) {
+              window.scrollTo({
+                top: 3800,
+                behavior: "smooth",
+              });
+            } else {
+              window.scrollTo({
+                top: 3750,
+                behavior: "smooth",
+              });
+            }
+          }
+        }
+      }
+    }
     setOpen(false);
   };
 
@@ -106,13 +187,11 @@ export default function Navbar() {
           <HiMenu onClick={handleOpen} style={{ height: 30, width: 30 }} />
         </MenuPlace>
         <Modal
-          // style={{ backdropFilter: "blur(5px)" }}
           aria-labelledby="transition-modal-title"
           aria-describedby="transition-modal-description"
           open={open}
           onClose={handleClose}
           closeAfterTransition
-          // slots={{ backdrop: Backdrop }}
           slotProps={{
             backdrop: {
               timeout: 500,

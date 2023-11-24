@@ -70,9 +70,9 @@ export default function MyProjects() {
           <WeatherAppDivLinks>
             <Title>Bebinim</Title>
             <Explain>
-              This is my biggest project, which is an iranian and <br /> foreign
-              film and series site. state management of <br />
-              this site is done with Redux Toolkit and Redux Persist.
+              I implemented this project using Next.js and TypeScript. <br />
+              Styled Components is used for styling. <br />
+              Redux Toolkit played a crucial role in state management.
             </Explain>
             <LinksPlace>
               <LinkDiv>

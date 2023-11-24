@@ -9,10 +9,8 @@ import Tooltip from "@mui/material/Tooltip";
 import ClickAwayListener from "@mui/material/ClickAwayListener";
 import { styled } from "@mui/material/styles";
 import { TooltipProps, tooltipClasses } from "@mui/material/Tooltip";
-import CloseIcon from "@mui/icons-material/Close";
 import Fade from "@mui/material/Fade";
 import Backdrop from "@mui/material/Backdrop";
-import Avatar from "@mui/material/Avatar";
 import { ContactMePlace, ContactMeText } from "../Styled-Components/StyledNavbar";
 import { MySocialAccounts, SocialAcountsText, StyledModal } from "../Styled-Components/StyledModal";
 import copy from "clipboard-copy";
@@ -22,7 +20,7 @@ export default function ContactModal() {
   const [open, setOpen] = useState<boolean>(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-  const textToCopy = "mtinkhni@gmail.com";
+  const textToCopy = "ghkhanimatin@gmail.com";
 
   const handleCopy = () => {
     copy(textToCopy);
@@ -70,20 +68,6 @@ export default function ContactModal() {
           <StyledModal>
             <MySocialAccounts>My Social Acounts</MySocialAccounts>
             <MySocialAccounts>
-              <Avatar sx={{ width: 50, height: 50 }} src="./Images/matin.jpg" />
-            </MySocialAccounts>
-            <div
-              style={{
-                position: "absolute",
-                cursor: "pointer",
-                top: 15,
-                right: 15,
-              }}
-              onClick={handleClose}
-            >
-              <CloseIcon />
-            </div>
-            <MySocialAccounts>
               <GitHubIcon style={{ height: 22, width: 30, marginRight: 4 }} />
               <SocialAcountsText>
                 <a
@@ -100,7 +84,7 @@ export default function ContactModal() {
               <SocialAcountsText>
                 <a
                   style={{ textDecoration: "none", color: "white" }}
-                  href="https://www.linkedin.com/in/matin-khani-ba034528b"
+                  href="http://linkedin.com/in/matin-khani-89286b29b"
                   target="_blank"
                 >
                   Linkedin

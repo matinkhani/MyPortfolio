@@ -32,7 +32,7 @@ export const StyledModal = styled.div`
 `;
 
 export const MySocialAccounts = styled.div`
-  height: 12.5%;
+  height: 14%;
   width: 100%;
   display: flex;
   justify-content: center;

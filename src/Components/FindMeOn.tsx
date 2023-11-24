@@ -31,7 +31,7 @@ export default function FindMeOn() {
           <div>
             <a
               style={{ textDecoration: "none", color: "white" }}
-              href="https://www.linkedin.com/in/matin-khani-ba034528b"
+              href="http://linkedin.com/in/matin-khani-89286b29b"
               target="_blank"
             >
               <FaLinkedinIn
