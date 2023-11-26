@@ -1,5 +1,3 @@
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import Typewriter from "typewriter-effect";
 import {
   AboutContainer,
   AboutTextH1,
@@ -13,7 +11,7 @@ export default function AboutMe() {
     <AboutContainer>
       <AboutTextPlace>
         <AboutTextH1>
-          Know Who <IMH1>I'M</IMH1>
+          Know Who <IMH1>I AM</IMH1>
         </AboutTextH1>
         <AboutTextH2>
           Hi Everyone, I am <strong style={{ color: "#cd5ff8" }}>Matin</strong>{" "}
